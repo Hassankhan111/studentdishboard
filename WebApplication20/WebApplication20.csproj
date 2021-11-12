@@ -88,11 +88,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrip\bootstrap-responsive.css" />
+    <Content Include="bootstrip\bootstrap-responsive.min.css" />
+    <Content Include="bootstrip\bootstrap.css" />
+    <Content Include="bootstrip\bootstrap.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\DSC_0247.jpg" />
+    <Content Include="images\unnamed.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,6 +108,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

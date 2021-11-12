@@ -1,0 +1,253 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+
+
+
+</head>
+<body style="background-color:#f1f1f1">
+
+    <style>
+        #loginf {
+            background-color: #808080;
+            width: 20%;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            li a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+
+
+
+
+
+
+        #table {
+            background-color: #808080;
+            height: 50px;
+            float: right;
+            padding: 17px;
+         
+        }
+
+
+
+
+
+
+
+
+        #pic {
+            height: 120px;
+            float: left;
+            padding: 18px;
+            background-color: #808080;
+            width: 190px;
+        }
+
+        #foter {
+            background-color: brown;
+            height: 30px;
+            width: auto;
+        }
+
+        #header {
+            background-color: #808080;
+            height: 80px;
+            width: auto;
+            padding: 5px;
+        }
+
+        #StudentInformation {
+            float: right;
+     
+            
+        }
+        #Mytable ,td ,th {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+       
+        }
+
+    </style>
+
+
+
+
+
+
+    <div id="header">
+
+
+        <div id="pic">
+
+            <img src="~/images/DSC_0247.jpg" height="100px" width="80px" float="left" /><br />
+
+            <input type="button" value="EditPicture" class="buttion" buttion style="background-color:#ffffff" />
+
+        </div>
+
+
+
+        <div id="table">
+            
+                
+                    
+                        <label>Enter User Name</label>
+                        <input type="text" name="txt" id="userName" placeholder="Enter User Name" /><br />
+                    
+
+                
+                
+                    
+                        <label>Enter Password</label>
+                        <input type="password" name="txt" id="pasw" placeholder="Enter  password" />
+
+
+                        <input type="submit" />
+                    
+            
+        </div>
+
+
+    </div>
+
+ <div id="StudentInformation">
+
+    <h1> Student Profile</h1>
+
+    <p>this is a Student information page this page provide all information</p>
+     <p>reladet to student 
+     Acadmic and student personal 
+     information like student:</p>
+
+    <table id="Mytable">
+        <tr>
+            <th class="thh"> Name  </th>
+            <th>FatherName</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>grade</th>
+
+        </tr>
+        <tr>
+            <td class="tdd">KAMRAN</td>
+
+            <td>HASSAN KHAN</td>
+
+            <td>Armanimran240@gmail.com</td>
+
+            <td> sialkot</td>
+
+            <td>3rd</td>
+
+
+        </tr>
+
+        <tr>
+            <td>Arman</td>
+
+            <td>HASSAN KHAN</td>
+
+            <td>Armanimran322@gmail.com</td>
+
+            <td>Anwar stree abbot road sialkot</td>
+
+            <td>3rd</td>
+
+
+        </tr>
+
+    </table>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @*student login portal*@
+    <div id="loginf">
+        <h2>Student DashBoard</h2>
+        <ul>
+
+
+            <li><a class="active" href="#Student Profile">Student Profile</a></li>
+            <li> <a hreaf="#"> Student Grade by Subjects</a></li>
+
+
+            <li> <a hreaf="#">Enrolled subjects</a></li>
+
+            <li> <a hreaf="#">Student Grade by Subjects.</a></li>
+            <li> <a hreaf="#"> Withdraw a subjects</a></li>
+            <li> <a hreaf="#">Upload Assignments</a></li>
+            <li> <a hreaf="#">List of Assignments</a></li>
+            <li> <a hreaf="#">Student parent Details</a></li>
+
+
+
+        </ul>
+
+
+    </div>
+
+
+
+    <div id="foter">
+        <p style="color:white" text-align="center">2021@All Right reserved<</p>
+    </div>
+
+
+
+</body>
+</html>
