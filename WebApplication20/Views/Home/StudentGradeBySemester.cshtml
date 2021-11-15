@@ -3,6 +3,7 @@
     Layout = null;
 }
 
+
 <!DOCTYPE html>
 
 <html>
@@ -59,7 +60,6 @@
             height: 50px;
             float: right;
             padding: 17px;
-         
         }
 
 
@@ -92,16 +92,13 @@
 
         #StudentInformation {
             float: right;
-     
-            
         }
-        #Mytable ,td ,th {
+
+        #Mytable, td, th {
             border: 1px solid;
             padding: 10px;
             text-align: center;
-       
         }
-
     </style>
 
 
@@ -124,76 +121,54 @@
 
 
         <div id="table">
-            
-                
-                    
-                        <label>Enter User Name</label>
-                        <input type="text" name="txt" id="userName" placeholder="Enter User Name" /><br />
-                    
-
-                
-                
-                    
-                        <label>Enter Password</label>
-                        <input type="password" name="txt" id="pasw" placeholder="Enter  password" />
 
 
-                        <input type="submit" />
-                    
-            
+
+            <strong>Mohammad Imran DishBoard</strong>
+
+
         </div>
 
 
     </div>
 
- <div id="StudentInformation">
+    <div id="StudentInformation">
 
-    <h1> Student Profile</h1>
+        <h1> Student Grade by Courses</h1>
 
-    <p>this is a Student information page this page provide all information</p>
-     <p>reladet to student 
-     Acadmic and student personal 
-     information like student:</p>
+        <p>this is a Student Result page this page provide all information</p>
+        <p>
+            reladet to student
+            Acadmic and student grade by Courses:
+        </p>
 
-    <table id="Mytable">
-        <tr>
-            <th class="thh"> Name  </th>
-            <th>FatherName</th>
-            <th>Email</th>
-            <th>Address</th>
-            <th>grade</th>
+        <table id="Mytable">
+            <tr>
+                <th class="thh"> Web Development  </th>
+                <th>Data Base</th>
+                <th>Algorithms Analysis</th>
+                <th>Computer Vision</th>
+                <th>Data Scince</th>
 
-        </tr>
-        <tr>
-            <td class="tdd">KAMRAN</td>
-
-            <td>HASSAN KHAN</td>
-
-            <td>Armanimran240@gmail.com</td>
-
-            <td> sialkot</td>
-
-            <td>3rd</td>
+            </tr>
 
 
-        </tr>
+            <tr>
+                <td>80</td>
 
-        <tr>
-            <td>Arman</td>
+                <td>70</td>
 
-            <td>HASSAN KHAN</td>
+                <td>60</td>
 
-            <td>Armanimran322@gmail.com</td>
+                <td>90</td>
 
-            <td>Anwar stree abbot road sialkot</td>
-
-            <td>3rd</td>
+                <td>80</td>
 
 
-        </tr>
+            </tr>
 
-    </table>
-     </div>
+        </table>
+    </div>
 
 
 
@@ -223,17 +198,17 @@
         <ul>
 
 
-            <li><a class="active" href="@Url.Action("Index", "Home")">Student Profile</a></li>
-            
+            <li><a href="@Url.Action("Index", "Home")">Student Profile</a></li>
+            <li> <a href="#"> Student Grade by Subjects</a></li>
 
 
-            <li> <a href="@Url.Action("StudentEnroledSubject", "Home")">Enrolled subjects</a></li>
+            <li> <a  href="#">Enrolled subjects</a></li>
 
-            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade by Subjects.</a></li>
-            <li> <a href="@Url.Action("WithdrawAssignments", "Home")"> Withdraw a subjects</a></li>
-            <li> <a href="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>
-            <li> <a href="@Url.Action("ListOfAssignment", "Home")">List of Assignments</a></li>
-            <li> <a href="@Url.Action("stParentDetails", "Home")">Student parent Details</a></li>
+            <li> <a class="active" href="#">Student Grade by Subjects.</a></li>
+            <li> <a href="#"> Withdraw a subjects</a></li>
+            <li> <a href="#">Upload Assignments</a></li>
+            <li> <a href="#">List of Assignments</a></li>
+            <li> <a href="#">Student parent Details</a></li>
 
 
 

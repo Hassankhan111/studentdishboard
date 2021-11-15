@@ -99,7 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.cs">
+      <BrowseToURL>UploadAssignment</BrowseToURL>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -109,6 +111,12 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\StudentEnroledSubject.cshtml" />
+    <Content Include="Views\Home\StudentGradeBySemester.cshtml" />
+    <Content Include="Views\Home\UploadAssignment.cshtml" />
+    <Content Include="Views\Home\ListOfAssignment.cshtml" />
+    <Content Include="Views\Home\stParentDetails.cshtml" />
+    <Content Include="Views\Home\Techerpage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

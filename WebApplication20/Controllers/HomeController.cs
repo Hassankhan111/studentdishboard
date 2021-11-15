@@ -15,5 +15,40 @@ namespace WebApplication20.Controllers
             return View();
             
         }
+
+        public ActionResult StudentEnroledSubject()
+        {
+
+            return View();
+
+        }
+
+        public ActionResult StudentGradeBySemester()
+        {
+            return View();
+
+        }
+
+        public ActionResult UploadAssignment()
+        {
+            return View();
+        }
+
+        public ActionResult ListOfAssignment()
+        {
+            return View();
+        }
+
+        public  ActionResult stParentDetails()
+        {
+            return View();
+
+        }
+
+        public ActionResult Techerpage()
+        {
+            return View();
+        }
+
     }
 }

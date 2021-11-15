@@ -1,0 +1,216 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student-parent-Detials</title>
+</head>
+<body style="background-color:#ff6a00">
+
+    <style>
+        #loginf {
+            background-color: #808080;
+            width: 20%;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            li a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+
+
+
+
+
+
+        #table {
+            background-color: #808080;
+            height: 50px;
+            float: right;
+            padding: 17px;
+        }
+
+
+
+
+
+
+
+
+        #pic {
+            height: 120px;
+            float: left;
+            padding: 18px;
+            background-color: #808080;
+            width: 190px;
+        }
+
+        #foter {
+            background-color: brown;
+            height: 30px;
+            width: auto;
+        }
+
+        #header {
+            background-color: brown;
+            height: 80px;
+            width: auto;
+            padding: 5px;
+        }
+
+        #StudentInformation {
+            float: right;
+        }
+
+        #Mytable, td, th {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+    <div id="header">
+
+
+        <div id="pic">
+
+            <img src="~/images/DSC_0247.jpg" height="100px" width="80px" float="left" /><br />
+
+            <input type="button" value="EditPicture" class="buttion" buttion style="background-color:#ffffff" /><br />
+            <input type="button" value="EditProfile" class="buttion" buttion style="background-color:#ffffff" />
+
+        </div>
+
+
+
+        <div id="table">
+
+
+
+            <label>Enter User Name</label>
+            <input type="text" name="txt" id="userName" placeholder="Enter User Name" /><br />
+
+
+
+
+
+            <label>Enter Password</label>
+            <input type="password" name="txt" id="pasw" placeholder="Enter  password" />
+
+
+            <input type="submit" />
+
+
+        </div>
+
+
+    </div>
+
+    <div  id="StudentInformation">
+
+        <h1> Student Parent Profile</h1>
+
+        <p >this is a Student parent profile</p>
+        <p>
+          in this section parent can view  has kids education background like student courses , register courses ,etc
+        </p>
+
+        <table id="Mytable">
+            <tr>
+                <th class="thh"> Name  </th>
+                <th>occupation </th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>phoneN</th>
+
+            </tr>
+            <tr>
+                <td class="tdd">Hassan Khan</td>
+
+                <td>techer</td>
+
+                <td>Armanimran240@gmail.com</td>
+
+                <td> sialkot</td>
+
+                <td>03045975020</td>
+
+
+            </tr>
+
+        
+
+        </table>
+    </div>
+
+
+  @*student login portal*@
+    <div id="loginf">
+        <h2>Student DashBoard</h2>
+        <ul>
+
+
+            <li><a class="active" href="@Url.Action("stParentDetails", "Home")">Student_Parent Profile</a></li>
+
+
+
+            <li> <a href="@Url.Action("Index", "Home")">Student Profile</a></li>
+
+            <li> <a href="@Url.Action("StudentEnroledSubject", "Home")"> Student Courses.</a></li>
+            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade By Subject</a></li>
+            <li> <a href="@Url.Action("Techerpage", "Home")">Techers profile</a></li>
+            <li> <a href="@Url.Action("ListOfAssignment", "Home")">View Assginments</a></li>
+            <li> <a href="@Url.Action("ListOfAssignment", "Home")">WithDraw Subject</a></li>
+  
+
+
+
+        </ul>
+
+
+    </div>
+
+
+
+    <div id="foter">
+        <p style="color:white" text-align="center">2021@All Right reserved<</p>
+    </div>
+
+
+
+</body>
+</html>
+
