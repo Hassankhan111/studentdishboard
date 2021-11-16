@@ -9,14 +9,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-
-
-
-
-
+    <title>Student-parent-Detials</title>
 </head>
-<body style="background-color:#f1f1f1">
+
+<body style="background-color:palevioletred">
 
     <style>
         #loginf {
@@ -98,7 +94,11 @@
             border: 1px solid;
             padding: 10px;
             text-align: center;
+            
+
+            
         }
+        #Mytable{float:left;}
     </style>
 
 
@@ -122,9 +122,7 @@
 
         <div id="table">
 
-
-
-            <strong>Mohammad Imran DishBoard</strong>
+            <strong>Techer DishBord</strong>
 
 
         </div>
@@ -134,61 +132,70 @@
 
     <div id="StudentInformation">
 
-        <h1> Student Grade by Courses</h1>
+        <h1> List of Courses </h1>
 
-        <p>this is a Student Result page this page provide all information</p>
-        <p>
-            reladet to student
-            Acadmic and student grade by Courses:
-        </p>
+        <p>In this page techers can view there enrolled coursse
+      
+
 
         <table id="Mytable">
             <tr>
-                <th class="thh"> Web Development  </th>
-                <th>Data Base</th>
-                <th>Algorithms Analysis</th>
-                <th>Computer Vision</th>
-                <th>Data Scince</th>
+                <th>list Of Courses</th>
+                <th>Course Code</th>
+               
 
             </tr>
+            <tr>
 
+           
+
+                <td> database</td>
+
+                <td>CS444</td>
+
+
+            </tr>
 
             <tr>
-                <td>80</td>
+                <td class="tdd">Algorithms Analysis</td>
 
-                <td>70</td>
-
-                <td>60</td>
-
-                <td>90</td>
-
-                <td>80</td>
-
-
+                <td>    CS345/td>
             </tr>
+
+            <tr>
+                <td class="tdd">Data Strecture</td>
+
+                <td>CS443</td>
+                </tr>
+         
+            <tr>
+                <td> Web Design</td>
+
+                <td>CS43</td>
+            </tr>
+
+          
+              
 
         </table>
     </div>
 
 
-
-
-
- @*student login portal*@
+    @*student login portal*@
     <div id="loginf">
         <h2>Student DashBoard</h2>
         <ul>
 
 
+            <li><a href="@Url.Action("TecherPage", "Home")">Techer Profile</a></li>
+            <li><a class="active"href="@Url.Action("StudentEnroledSubject", "Home")">List of Classes Enrolled</a></li>
 
+            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")"> Student Less by Classes.</a></li>
+            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade By Subject</a></li>
+            <li> <a href="@Url.Action("stParentDetails", "Home")">Student-Parent profile</a></li>
+            <li> <a href="@Url.Action("Index", "Home")">Student-Profile</a></li>
+            <li> <a href="@Url.Action("UploadAssignment", "Home")">View Uploaded Assignments</a></li>
 
-            <li><a href="@Url.Action("Index", "Home")">Student Profile</a></li>
-            <li> <a href="@Url.Action("StudentEnroledSubject", "Home")">Enrolled subjects</a></li>
-            <li> <a class ="active" href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade by Subjects.</a></li>
-            <li> <a href="@Url.Action("WithdrawAssignments", "Home")"> Withdraw a subjects</a></li>
-            <li> <a href="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>
-            <li> <a href="@Url.Action("ListOfAssignment", "Home")">List of Assignments</a></li>
-            <li> <a href="@Url.Action("stParentDetails", "Home")">Student parent Details</a></li>
 
 
 
@@ -207,3 +214,6 @@
 
 </body>
 </html>
+
+
+

@@ -131,10 +131,7 @@
                         <input type="text" name="txt" id="userName" placeholder="Enter User Name" /><br />
                     
 
-                
-                
-                    
-                        <label>Enter Password</label>
+                         <label>Enter Password</label>
                         <input type="password" name="txt" id="pasw" placeholder="Enter  password" />
 
 
@@ -153,41 +150,30 @@
     <p>this is a Student information page this page provide all information</p>
      <p>reladet to student 
      Acadmic and student personal 
-     information like student:</p>
+     information like student: grade: course register etc</p>
 
     <table id="Mytable">
         <tr>
             <th class="thh"> Name  </th>
             <th>FatherName</th>
+            <th>Semester</th>
+            <th>program</th>
             <th>Email</th>
             <th>Address</th>
             <th>grade</th>
 
         </tr>
         <tr>
-            <td class="tdd">KAMRAN</td>
+            <td class="tdd">Kamran Khan</td>
 
             <td>HASSAN KHAN</td>
 
+
+            <td>3rd</td>
+            <td>MSCS</td>
             <td>Armanimran240@gmail.com</td>
-
             <td> sialkot</td>
-
-            <td>3rd</td>
-
-
-        </tr>
-
-        <tr>
-            <td>Arman</td>
-
-            <td>HASSAN KHAN</td>
-
-            <td>Armanimran322@gmail.com</td>
-
-            <td>Anwar stree abbot road sialkot</td>
-
-            <td>3rd</td>
+            <td>2nd</td>
 
 
         </tr>
@@ -196,39 +182,14 @@
      </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @*student login portal*@
     <div id="loginf">
-        <h2>Student DashBoard</h2>
+        <h2>Student DishBoard</h2>
         <ul>
 
-
-            <li><a class="active" href="@Url.Action("Index", "Home")">Student Profile</a></li>
+             <li><a class="active" href="@Url.Action("Index", "Home")">Student Profile</a></li>
             
-
-
             <li> <a href="@Url.Action("StudentEnroledSubject", "Home")">Enrolled subjects</a></li>
-
             <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade by Subjects.</a></li>
             <li> <a href="@Url.Action("WithdrawAssignments", "Home")"> Withdraw a subjects</a></li>
             <li> <a href="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>

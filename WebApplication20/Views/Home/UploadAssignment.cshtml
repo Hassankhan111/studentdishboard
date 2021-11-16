@@ -133,10 +133,10 @@
 
         <h1> Upload Assignments</h1>
 
-        <p>this is a Student Task page this page provide all information</p>
+        <p>this is a Student Assignments Uploaded page</p>
         <p>
-            reladet to student
-           Assginments student can Upload has assignment here :
+           
+          in this page student can submit has assginments within due time and date :
         </p>
 
       
@@ -156,42 +156,21 @@
         </table>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @*student login portal*@
     <div id="loginf">
         <h2>Student DashBoard</h2>
         <ul>
 
 
-            <li><a href="@Url.Action("Index", "Home")">Student Profile</a></li>
-            <li> <a hreaf="@Url.Action("UploadAssignment", "Home")"> Student Grade by Subjects</a></li>
-            <li> <a hreaf="@Url.Action("", "Home")">">Enrolled subjects</a></li>
-            <li> <a hreaf="#">Student Grade by Subjects.</a></li>
-            <li> <a hreaf="#"> Withdraw a subjects</a></li>
-            <li> <a class="active" hreaf="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>
-            <li> <a hreaf="#">List of Assignments</a></li>
-            <li> <a hreaf="#">Student parent Details</a></li>
+            <li> <a href="@Url.Action("Index", "Home")">Student Profile</a></li>
+
+            <li> <a href="@Url.Action("StudentEnroledSubject", "Home")">Enrolled subjects</a></li>
+            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade by Subjects.</a></li>
+            <li> <a href="@Url.Action("WithdrawAssignments", "Home")"> Withdraw a subjects</a></li>
+            <li> <a class="active" href="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>
+            <li> <a href="@Url.Action("ListOfAssignment", "Home")">List of Assignments</a></li>
+            <li> <a href="@Url.Action("stParentDetails", "Home")">Student parent Details</a></li>
+
 
 
 

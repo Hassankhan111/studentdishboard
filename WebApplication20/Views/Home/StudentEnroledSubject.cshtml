@@ -136,11 +136,9 @@
 
         <h1> Student Enrolled Courses</h1>
 
-        <p>this is a Student information page this page provide all information</p>
+        <p>this is a Student inrolled subjects list psge </p>
         <p>
-            reladet to student
-            Acadmic and student personal
-            information like student:
+            thid page related to the view of student rigester courses
         </p>
 
         <table id="Mytable">
@@ -172,27 +170,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @*student login portal*@
     <div id="loginf">
         <h2>Student DashBoard</h2>
@@ -200,16 +177,13 @@
 
 
             <li><a href="@Url.Action("Index", "Home")">Student Profile</a></li>
-            <li> <a href="#"> Student Grade by Subjects</a></li>
 
-
-            <li> <a class="active" href="#">Enrolled subjects</a></li>
-
-            <li> <a href="#">Student Grade by Subjects.</a></li>
-            <li> <a href="#"> Withdraw a subjects</a></li>
-            <li> <a href="#">Upload Assignments</a></li>
-            <li> <a href="#">List of Assignments</a></li>
-            <li> <a href="#">Student parent Details</a></li>
+            <li> <a class="active" href="@Url.Action("StudentEnroledSubject", "Home")">Enrolled subjects</a></li>
+            <li> <a href="@Url.Action("StudentGradeBySemester", "Home")">Student Grade by Subjects.</a></li>
+            <li> <a href="@Url.Action("WithdrawAssignments", "Home")"> Withdraw a subjects</a></li>
+            <li> <a href="@Url.Action("UploadAssignment", "Home")">Upload Assignments</a></li>
+            <li> <a href="@Url.Action("ListOfAssignment", "Home")">List of Assignments</a></li>
+            <li> <a href="@Url.Action("stParentDetails", "Home")">Student parent Details</a></li>
 
 
 

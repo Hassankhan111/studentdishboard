@@ -50,5 +50,13 @@ namespace WebApplication20.Controllers
             return View();
         }
 
+        public ActionResult ListofStudent()
+        {
+            return View();
+        }
+        public ActionResult ListofclassesEn()
+        {
+            return View();
+        }
     }
 }
